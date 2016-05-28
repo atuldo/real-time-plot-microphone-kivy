@@ -62,3 +62,4 @@ if __name__ == "__main__":
     get_level_thread.daemon = True
     get_level_thread.start()
     RealTimeMicrophone().run()
+    
