@@ -26,7 +26,6 @@ def get_microphone_level():
                rate=RATE,
                input=True,
                frames_per_buffer=chunk)
-    global levels
     while True:
         data = s.read(chunk)
         mx = audioop.rms(data, 2)
