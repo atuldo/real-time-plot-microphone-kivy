@@ -1,15 +1,14 @@
 """Real time plotting of Microphone level using kivy
 """
 
-import audioop
-import pyaudio
 from kivy.lang import Builder
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.garden.graph import MeshLinePlot
 from kivy.clock import Clock
 from threading import Thread
-
+import audioop
+import pyaudio
 
 def get_microphone_level():
     """
